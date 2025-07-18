@@ -28,7 +28,7 @@
 9. Network Automation: Supports Connect feature (TLS encryption and authentication between services), automatically generating and rotating certificates to achieve zero-trust networks. Can replace traditional VPNs, simplifying secure communication configurations.
 10. Monitoring and Observability Integration: Built-in Prometheus metrics endpoint, exposing cluster status and performance data (e.g., Raft transaction count, health check status). Integrates with tools like Grafana, OpenTelemetry, etc., visualizing service topology and performance metrics.
 
-This project offers pre-configured [**`Consul-Service Network Solutions`**]()，images with Consul and its runtime environment pre-installed, along with deployment templates. Follow the guide to enjoy an "out-of-the-box" experience.
+This project offers pre-configured [**`Consul-Service Network Solutions`**](https://marketplace.huaweicloud.com/intl/hidden/contents/b0234187-442f-4315-9280-a89cb53ec6e6)，images with Consul and its runtime environment pre-installed, along with deployment templates. Follow the guide to enjoy an "out-of-the-box" experience.
 
 **Architecture Design:**
 
