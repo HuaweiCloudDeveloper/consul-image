@@ -2,7 +2,7 @@
 
 ## 规格说明
 
-- 镜像商品：[Consul-服务网络解决方案]()
+- 镜像商品：[Consul-服务网络解决方案](https://marketplace.huaweicloud.com/hidden/contents/78e3af1d-71c5-46eb-98ed-6e18e28be253#productid=OFFI1151329556293267456)
 - 镜像规格：Consul1.17.0-arm-v1.0
 - 预置环境：Consul1.17.0
 - 适配项：[ECS](https://support.huaweicloud.com/ecs/index.html)

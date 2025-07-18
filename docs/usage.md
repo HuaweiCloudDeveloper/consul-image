@@ -2,7 +2,7 @@
 
 # 商品链接
 
-[Consul-服务网络解决方案]()
+[Consul-服务网络解决方案](https://marketplace.huaweicloud.com/hidden/contents/78e3af1d-71c5-46eb-98ed-6e18e28be253#productid=OFFI1151329556293267456)
 
 # 商品说明
 
