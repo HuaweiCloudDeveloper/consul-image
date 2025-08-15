@@ -144,6 +144,22 @@ KillMode=process
 Restart=on-failure
 LimitNOFILE=65536
 
+# 添加服务启动前清理逻辑
+ExecStartPre=/bin/bash -c '\
+    echo "检查并清理旧Consul数据..."; \
+    if systemctl is-active --quiet consul; then \
+        systemctl stop consul; \
+        pkill -9 consul || true; \
+    fi; \
+    if [ -d "$CONSUL_DATA_DIR" ]; then \
+        echo "备份旧数据到 $CONSUL_DATA_DIR.bak"; \
+        mv -f $CONSUL_DATA_DIR $CONSUL_DATA_DIR.bak || true; \
+    fi; \
+    mkdir -p $CONSUL_DATA_DIR; \
+    chown -R $CONSUL_USER:$CONSUL_GROUP $CONSUL_DATA_DIR; \
+    chmod -R 750 $CONSUL_DATA_DIR; \
+    echo "数据目录已重置";'
+
 [Install]
 WantedBy=multi-user.target
 EOF
